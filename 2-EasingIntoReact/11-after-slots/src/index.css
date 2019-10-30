@@ -1,0 +1,67 @@
+html,
+body,
+#root,
+.app,
+.body {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  font-family: 'Open Sans', sans-serif;
+}
+.nav {
+  background: #fff4ca;
+  border-bottom: 2px solid #ffd31f;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.body {
+  display: flex;
+  padding: 10px;
+  height: calc(100% - 57px);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.sidebar {
+  border: 2px solid #1f73ff;
+  margin-right: 10px;
+  background: #cbdfff;
+  max-height: 120px;
+  flex-basis: 120px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .stats {
+  text-transform: lowercase;
+  font-size: 12px;
+}
+.content {
+  padding: 10px;
+  border: 2px solid #8bc34a;
+  background-color: #f1f8e9;
+  flex: 1;
+}
+.user-avatar {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.user-avatar.small {
+  width: 32px;
+  height: 32px;
+}
+.user-stats {
+  width: 100%;
+}
+.user-stats > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}

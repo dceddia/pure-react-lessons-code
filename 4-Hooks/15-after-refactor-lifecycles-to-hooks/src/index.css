@@ -1,0 +1,17 @@
+body {
+  font-family: 'IBM Plex Sans';
+  font-size: 25px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+label {
+  display: block;
+  margin: 40px 0;
+}
+label + div {
+  font-size: 80px;
+}

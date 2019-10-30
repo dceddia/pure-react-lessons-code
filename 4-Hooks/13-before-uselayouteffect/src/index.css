@@ -1,0 +1,17 @@
+body {
+  color: #333;
+  font-size: 20px;
+  user-select: none;
+}
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+}
+html,
+body,
+div {
+  height: 100%;
+}
+div {
+  padding: 10px;
+}

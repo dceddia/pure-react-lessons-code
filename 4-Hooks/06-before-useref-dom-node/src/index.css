@@ -1,0 +1,40 @@
+body {
+  color: #333;
+  margin-top: 3em;
+}
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+label {
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #555;
+}
+input {
+  margin-bottom: 1em;
+  padding: 3px 8px;
+}
+input:last-of-type {
+  margin-bottom: 1.5em;
+}
+button {
+  background: #4f2aff;
+  color: #fff;
+  border: 2px solid #babada;
+  outline: none;
+  padding: 5px 10px;
+  transition: all 0.1s;
+}
+button:focus {
+  box-shadow: 0 0 3px blue;
+}
+button:active {
+  transform: scale(0.95);
+}

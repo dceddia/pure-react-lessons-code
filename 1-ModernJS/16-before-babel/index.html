@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Modern JS</title>
+	<meta charset="UTF-8" />
+  <link rel="icon" href="favicon.png?v=5" type="image/png" />
+  <style>
+    body {
+      font-family: "IBM Plex Sans", Helvetica, arial, sans-serif;
+			font-size: 17px;
+      text-align: center;
+      margin-top: 4em;
+    }
+    h2 {
+      font-weight: normal;
+    }
+  </style>
+</head>
+
+<body>
+	<h2></h2>
+  <script src="index.js"></script>
+  <script>
+    const messages = [
+      "It's console time 👇",
+      "Check out the console 👇",
+      "The good stuff is in the console 👇",
+      "Pssst. Look at the console 👇",
+      "GET TO DA CONSOLE 👇",
+    ]
+    const randomMessage = messages[Math.trunc(Math.random() * messages.length)]
+    document.querySelector('h2').innerHTML = randomMessage;
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+body {
+  font-size: 25px;
+}
+* {
+  font-family: 'IBM Plex Sans';
+  text-align: center;
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+button {
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 10px;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 18px;
+}
+button:active {
+  transform: scale(0.9);
+}
+
+span {
+  color: #424242;
+  font-size: 4em;
+  margin: 0;
+}
+h2 {
+  margin-bottom: 0.3em;
+  font-size: 28px;
+}
+
+/* Water */
+h2:nth-of-type(1) {
+  color: #1565c0;
+}
+button:nth-of-type(1) {
+  border-color: #1565c055;
+}
+button:nth-of-type(1):focus {
+  box-shadow: 0 0 3px #1565c0;
+  border-color: #1565c0;
+}
+button:nth-of-type(1):active {
+  background: #1565c011;
+}
+
+/* Coffee */
+h2:nth-of-type(2) {
+  color: #864108;
+}
+button:nth-of-type(2) {
+  border-color: #86410855;
+}
+button:nth-of-type(2):focus {
+  box-shadow: 0 0 3px #864108;
+  border-color: #864108;
+}
+button:nth-of-type(2):active {
+  background: #86410811;
+}

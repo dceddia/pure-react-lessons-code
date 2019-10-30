@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans';
+}
+
+body {
+  font-size: 20px;
+  margin-top: 20px;
+}
+main {
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  font-size: 20px;
+  padding: 3px 5px;
+  margin-bottom: 1em;
+}
+label {
+  font-size: 0.9em;
+  opacity: 0.8;
+  display: block;
+}

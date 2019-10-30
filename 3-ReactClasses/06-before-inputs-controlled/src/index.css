@@ -1,0 +1,8 @@
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+input {
+  font-size: 16px;
+  border: 1px solid #5a7088;
+  padding: 5px;
+}

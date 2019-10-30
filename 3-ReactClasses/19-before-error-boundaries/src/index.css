@@ -1,0 +1,59 @@
+body {
+  margin: 30px;
+}
+body,
+button {
+  font-family: 'IBM Plex Sans';
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dice {
+  border: 1px solid #ccc;
+  padding: 20px;
+  color: #222;
+  overflow: auto;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 5px rgba(0.5, 0.5, 0.5, 0.15);
+  width: 100px;
+  display: flex;
+}
+.dice > span {
+  flex: 1;
+  text-align: center;
+  font-size: 28px;
+}
+button {
+  background: #3257ff;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px #3257ff;
+  transition: box-shadow, background-color 0.12s;
+  outline: none;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+button:hover {
+  background-color: #1431b9;
+  cursor: pointer;
+}
+button:focus {
+  box-shadow: 0 1px 8px #3257ff;
+}
+button:active {
+  transform: scale(0.98);
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}

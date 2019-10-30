@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans';
+}
+
+body {
+  font-size: 20px;
+}
+main {
+  max-width: 320px;
+  margin: 0 auto;
+}
+input {
+  font-size: 20px;
+  padding: 3px 5px;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #2e4fff;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  outline: none;
+  transition: transform 0.15s;
+  margin-left: 10px;
+}
+
+button:hover {
+  background: #3a56ea;
+  cursor: pointer;
+}
+
+button:active {
+  background: #2340da;
+  transform: scale(0.95);
+}
+
+label {
+  display: block;
+}
+
+.add-product {
+  display: grid;
+  grid: 1fr 1fr / 3fr 1fr;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.add-product label {
+  grid-column: 1 / 3;
+  text-align: left;
+  align-self: end;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+ul {
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+li {
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.actions button {
+  padding: 5px 10px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #999;
+}
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

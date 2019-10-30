@@ -1,0 +1,16 @@
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+input {
+  font-size: 16px;
+  border: 1px solid #5a7088;
+  padding: 5px;
+}
+button {
+  border: 2px solid #5a7088;
+  background: #5a7088;
+  color: #fff;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 12px;
+}

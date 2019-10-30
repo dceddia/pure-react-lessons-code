@@ -1,0 +1,78 @@
+html,
+body,
+#root,
+.room {
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 2em;
+  font-family: 'IBM Plex Sans';
+  text-align: center;
+}
+button,
+input {
+  font-family: 'IBM Plex Sans';
+  font-size: 20px;
+}
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #2e4fff;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  outline: none;
+  transition: transform 0.15s;
+  margin-left: 10px;
+}
+
+button:hover {
+  background: #3a56ea;
+  cursor: pointer;
+}
+
+button:active {
+  background: #2340da;
+  transform: scale(0.95);
+}
+
+/* Hacks for coffee example */
+h1 {
+  color: #424242;
+  margin: 0;
+  margin-bottom: 30px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin-left: 48px;
+  margin-bottom: 30px;
+}
+
+.room p {
+  margin-bottom: 30px;
+}
+
+.room.lit {
+  background: #fff;
+  color: #333;
+}
+
+.room.unlit {
+  background: #333;
+  color: #fff;
+}
+.room.unlit h1 {
+  color: #fff;
+}
