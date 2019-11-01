@@ -64,6 +64,10 @@ a:visited {
 .App nav li.selected {
   border-bottom-color: #ffaa3f;
 }
+.App nav li.cart-count {
+  margin-left: auto;
+  margin-right: 0;
+}
 
 /* ItemPage */
 
@@ -110,14 +114,4 @@ a:visited {
 }
 .Item .add:focus {
   outline: none;
-}
-
-/* CartPage */
-
-.CartPage ul {
-  margin-bottom: 1em;
-}
-.CartPage .total {
-  text-align: right;
-  margin-right: 10px;
 }

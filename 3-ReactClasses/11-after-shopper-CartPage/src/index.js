@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { createBrowserHistory } from 'history';
 import ItemPage from './ItemPage';
 import NavBar from './NavBar';
 import CartPage from './CartPage';
@@ -13,59 +12,47 @@ const products = [
   { id: 4, name: 'Camera', price: 799 }
 ];
 
-const history = createBrowserHistory();
-
-const NotFound = () => (
-  <div>
-    <h2>404 Not Found</h2>
-  </div>
-);
-const App = ({ location }) => {
-  const [cart, setCart] = useState([]);
-
-  const addToCart = item => {
-    setCart(cart => [...cart, item]);
+class App extends React.Component {
+  state = {
+    activePage: 'store',
+    cart: []
   };
 
-  const cartSummary = cart.reduce((result, item) => {
-    const existingItem = result.find(
-      i => i.id === item.id
+  handleAdd = item => {
+    console.log(item);
+    this.setState(prev => ({
+      cart: [...prev.cart, item]
+    }));
+  };
+
+  handlePageChange = page => {
+    this.setState({ activePage: page });
+  };
+
+  render() {
+    const { activePage, cart } = this.state;
+
+    return (
+      <div className="App">
+        <NavBar
+          onPageChange={this.handlePageChange}
+          cartCount={cart.length}
+        />
+        <main>
+          {activePage === 'store' ? (
+            <ItemPage
+              onAddToCart={this.handleAdd}
+              items={products}
+            />
+          ) : (
+            <CartPage />
+          )}
+        </main>
+      </div>
     );
-    if (existingItem) {
-      existingItem.count++;
-    } else {
-      result.push({
-        ...item,
-        count: 1
-      });
-    }
-    return result;
-  }, []);
-
-  return (
-    <div className="App">
-      <NavBar history={history} />
-      <main>
-        {location.pathname === '/' ? (
-          <ItemPage
-            items={products}
-            onAddToCart={addToCart}
-          />
-        ) : location.pathname === '/cart' ? (
-          <CartPage items={cartSummary} />
-        ) : (
-          <NotFound />
-        )}
-      </main>
-    </div>
-  );
-};
-
-function render(location) {
-  ReactDOM.render(
-    <App location={location} />,
-    document.querySelector('#root')
-  );
+  }
 }
-render(history.location);
-history.listen(render);
+ReactDOM.render(
+  <App />,
+  document.querySelector('#root')
+);
