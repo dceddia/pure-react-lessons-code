@@ -1,0 +1,4 @@
+.DS_Store
+dist/
+.cache
+_dave_notes*
